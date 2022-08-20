@@ -4,6 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  color: #9bc39a;
 }
 
 .headingXl {
@@ -12,17 +13,22 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  color: #9bc39a;
 }
 
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
+  color: #9bc39a;
+  font-weight: 100;
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+  color: #9bc39a;
+  font-weight: 100;
 }
 
 .borderCircle {
@@ -48,5 +54,5 @@
 }
 
 .lightText {
-  color: #666;
+  color: #d4e2d4;
 }
