@@ -20,17 +20,14 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          Hello I'm Grant. I am a Technical IP Consultant, web designer, and
-          movie lover. Here is my little personal website. Hope you like it :)
-        </p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        <p className={utilStyles.lightText}>
+          Saving your time in our fast paced world. With the mountains of
+          content out there today, let us take the load off your shoulders. Only
+          watch shows and movies that are worth watching.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Reviews</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -44,9 +41,6 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
-      <section>
-        <Link href="posts/ssg-ssr">post</Link>
       </section>
     </Layout>
   );
