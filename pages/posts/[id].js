@@ -21,6 +21,7 @@ export default function Post({ postData }) {
           Score: {postData.review_rating}
         </h2>
         <div className={utilStyles.lightText}>
+          {postData.reviewer} <br></br>
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
