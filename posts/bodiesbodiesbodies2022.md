@@ -8,8 +8,6 @@ review_rating: "5"
 reviewer: "Grant Schowalter"
 ---
 
-# Work in progress
-
 _Bodies bodies bodies_ is a non stop laugh fest with dynamic characters, relevant humor, and genuine surprises woven into the plot. A24 capitalizes on their success with gen z audiences they have cultivated through Euphoria and nabbing Pete Davidson for a small role helps draw in the crowds even more. From the opening scene I was caught off guard with depth of characters and intense youthful spirit running through every interaction.
 
 Set in a remote mansion during a hurricane. A friend group of rich, family money, young adults get together for a "storm party". We follow Bee, an eastern european immigrant who is there on behalf of her relationship with Sophie who has been estranged from the friend group on account of her recent stint in rehab. In Clue fashion, the friends start to die one by one leading to a cross between murder house thriller and who done it mystery as the friends begin to turn on each other. Horror and jumpscares included!
