@@ -5,6 +5,7 @@ release_year: "2021"
 director: "Jerrod Carmichael"
 starring: "Jerrod Carmichael and Christopher Abbott"
 review_rating: "8"
+reviewer: "Patrick Russo"
 ---
 
 Jerrod Carmichael’s vanta-black comedy is a must watch for viewers who want a full-bodied film with heart wrenching compassion and smart laughs. On the Count of Three delivers on all fronts: outstanding performances from Carmichael and Christopher Abbott, witty dialogue, and melancholy cinematography.
