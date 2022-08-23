@@ -22,7 +22,7 @@ export default function Post({ postData }) {
         </h2>
         <div className={utilStyles.lightText}>
           {postData.reviewer} <br></br>
-          <Date dateString={postData.date} />
+          <Date dateString={postData.review_date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
