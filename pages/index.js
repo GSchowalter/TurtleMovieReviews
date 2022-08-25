@@ -6,6 +6,8 @@ import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
+  console.log("all posts data:");
+  console.log(allPostsData);
   return {
     props: {
       allPostsData,
