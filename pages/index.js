@@ -6,8 +6,6 @@ import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
-  console.log("all posts data:");
-  console.log(allPostsData);
   return {
     props: {
       allPostsData,
@@ -32,8 +30,8 @@ export default function Home({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Reviews</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, review_date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+            <li className={utilStyles.listItem} key={title + review_date}>
+              <Link href={`/posts/${title.replace(/\s/g, "")}`}>
                 <a>{title}</a>
               </Link>
               <br />
