@@ -3,8 +3,11 @@ import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
+import Showdown from "showdown";
 
 export default function Post({ postData }) {
+  const conv = new Showdown.Converter();
+  const html_review = conv.makeHtml(postData.review);
   return (
     <Layout>
       <Head>
@@ -26,9 +29,9 @@ export default function Post({ postData }) {
         </h2>
         <div className={utilStyles.lightText}>
           {postData.reviewer} <br></br>
-          <Date dateString={postData.review_date} />
+          {postData.review_date}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: html_review }} />
       </article>
     </Layout>
   );
@@ -44,6 +47,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+  console.log("id passed to getPostData function");
+  console.log(params);
   return {
     props: {
       postData,
