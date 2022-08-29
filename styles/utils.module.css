@@ -56,7 +56,7 @@
 .lightText {
   color: #d4e2d4;
 }
-.cinema_image {
-  width: auto;
-  height: auto;
+
+.rotateImg {
+  transform: rotate(90deg);
 }

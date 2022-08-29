@@ -20,10 +20,11 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className={utilStyles.lightText}>
-          Saving your time in our fast paced world. With the mountains of
-          content out there today, let us take the load off your shoulders. Only
-          watch shows and movies that are worth watching.
+        <p className={`${utilStyles.lightText}`}>
+          &emsp;&emsp; Saving your time in our fast paced world. Let us navigate
+          the ocean of content out there today so you can save time watching TV
+          and Movies that are worth watching. We take our time so you don't have
+          to!
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
