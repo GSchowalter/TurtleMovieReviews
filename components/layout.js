@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content="https://www.turtlereviews.com/logo-light.svg"
+          content="https://www.turtlereviews.com/logo-blue.svg"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/logo-light.svg"
+              src="/logo-blue.svg"
               height={144}
               width={144}
               alt={title}
@@ -45,7 +45,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/logo-light.svg"
+                  src="/logo-blue.svg"
                   height={108}
                   width={108}
                   alt={title}

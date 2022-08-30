@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className={`${utilStyles.lightText}`}>
+        <p>
           &emsp;&emsp; Saving your time in our fast paced world. Let us navigate
           the ocean of content out there today so you can save time watching TV
           and Movies that are worth watching. We take our time so you don't have
@@ -36,7 +36,7 @@ export default function Home({ allPostsData }) {
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>{review_date}</small>
+              <small>{review_date}</small>
             </li>
           ))}
         </ul>

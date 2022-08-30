@@ -5,8 +5,8 @@ body {
   font-family: "Murecho";
   line-height: 1.6;
   font-size: 18px;
-  background-color: #0d1c24;
-  color: aliceblue;
+  background-color: var(--theme-green);
+  color: var(--theme-dark-blue);
 }
 
 * {
@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: aliceblue;
+  color: var(--theme-dark-blue);
   text-decoration: none;
 }
 
@@ -25,4 +25,20 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+:root {
+  --turtle_green: #9bc39a;
+  --main_bg: #0d1c24;
+  --card_bg: #26322a;
+  --theme-dark-blue: #05386b;
+  --theme-dark-green: #379683;
+  --theme-green: #5cdb95;
+  --theme-light-green: #8ee4af;
+  --theme-cream: #edf5e1;
+  --deep-dark-purple: #0c0032;
+  --deep-mid-purple: #190061;
+  --deep-light-purple: #240090;
+  --deep-blue-purple: #3500d3;
+  --deep-dark-grey: #282828;
 }
