@@ -5,8 +5,8 @@ body {
   font-family: "Murecho";
   line-height: 1.6;
   font-size: 18px;
-  background-color: var(--theme-green);
-  color: var(--theme-dark-blue);
+  background-color: var(--background_color);
+  color: var(--text_color);
 }
 
 * {
@@ -41,4 +41,8 @@ img {
   --deep-light-purple: #240090;
   --deep-blue-purple: #3500d3;
   --deep-dark-grey: #282828;
+
+  /* New design themes */
+  --background_color: #0d0020;
+  --text_color: #eed9fd;
 }
