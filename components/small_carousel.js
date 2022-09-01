@@ -2,9 +2,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import { mediaByIndex } from "./media";
-import styles from "./smallgallery.module.css";
+import styles from "./smallcarousel.module.css";
 
-const SmallGallery = ({ slides }) => {
+const Smallcarousel = ({ slides }) => {
   const [viewportRef, embla] = useEmblaCarousel({
     slidesToScroll: 2,
     skipSnaps: false,
@@ -49,4 +49,4 @@ const SmallGallery = ({ slides }) => {
   );
 };
 
-export default SmallGallery;
+export default Smallcarousel;

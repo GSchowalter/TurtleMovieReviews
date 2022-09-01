@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/logo-blue.svg"
+                  src="/logo-light.svg"
                   height={108}
                   width={108}
                   alt={title}

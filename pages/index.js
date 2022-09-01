@@ -2,9 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
+import styles from "../styles/index.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import Gallery from "../components/gallery";
-import SmallGallery from "../components/small_gallery";
+import carousel from "../components/carousel";
+import Smallcarousel from "../components/small_carousel";
 
 const SLIDE_COUNT = 6;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -51,7 +52,21 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <SmallGallery slides={slides} />
+      <Smallcarousel slides={slides} />
+      <div className={styles.menu_bar}>
+        <ul>
+          <li>
+            <Link href="ratingsystem">Rating System</Link>
+          </li>
+          <li>
+            <Link href="aboutus">About Us</Link>
+          </li>
+          <li>
+            <Link href="meettheteam">Meet the Team</Link>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.review_gallery}>Browse</div>
     </Layout>
   );
 }

@@ -1,0 +1,51 @@
+.menu_bar {
+  /* list styles */
+  list-style-type: none;
+
+  /* color */
+  background-color: var(--medium_color);
+
+  /* sizing */
+  width: 100%;
+
+  /* content */
+  align-items: center;
+
+  /* text */
+  font-size: 42px;
+}
+
+.menu_bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+
+  /* flex */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menu_bar li {
+  float: inline-start;
+  width: 100%;
+}
+
+.menu_bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 42px;
+  text-decoration: none;
+}
+
+.menu_bar li a:hover {
+  background-color: #111111;
+}
+
+.review_gallery {
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+  height: 1000px;
+}

@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: var(--theme-dark-blue);
+  color: var(--light_color);
   text-decoration: none;
 }
 
@@ -46,4 +46,5 @@ img {
   --background_color: #000000;
   --light_color: #edf5e1;
   --text_color: #eed9fd;
+  --medium_color: rgb(118, 118, 118);
 }
