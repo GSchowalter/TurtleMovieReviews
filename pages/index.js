@@ -4,8 +4,9 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Gallery from "../components/gallery";
+import SmallGallery from "../components/small_gallery";
 
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = 6;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 export async function getStaticProps() {
@@ -46,6 +47,11 @@ export default function Home({ allPostsData }) {
     //     </ul>
     //   </section>
     // </Layout>
-    <Gallery slides={slides} />
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <SmallGallery slides={slides} />
+    </Layout>
   );
 }

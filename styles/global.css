@@ -43,6 +43,7 @@ img {
   --deep-dark-grey: #282828;
 
   /* New design themes */
-  --background_color: #0d0020;
+  --background_color: #000000;
+  --light_color: #edf5e1;
   --text_color: #eed9fd;
 }

@@ -9,13 +9,10 @@ export const siteTitle = "Turtle Reviews";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Murecho"
-          rel="stylesheet"
-        />
+
         <meta
           name="description"
           content="Turtle reviews. Reviewing all the movies."
@@ -32,12 +29,11 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/logo-blue.svg"
-              height={144}
-              width={144}
+              src="/header.svg"
+              height={50}
+              width={600}
               alt={title}
             />
-            <h1 className={utilStyles.heading2Xl}>{title}</h1>
           </>
         ) : (
           <>

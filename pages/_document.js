@@ -5,6 +5,10 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link
+            href="https://fonts.googleapis.com/css?family=Murecho"
+            rel="stylesheet"
+          />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
