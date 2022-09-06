@@ -3,7 +3,8 @@
   list-style-type: none;
 
   /* color */
-  background-color: var(--medium_color);
+  background-color: var(--light_color);
+  color: black;
 
   /* sizing */
   width: 100%;
@@ -12,7 +13,7 @@
   align-items: center;
 
   /* text */
-  font-size: 42px;
+  font-size: 30px;
 }
 
 .menu_bar ul {
@@ -20,7 +21,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
 
   /* flex */
   display: flex;
@@ -34,18 +34,19 @@
 
 .menu_bar li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 42px;
   text-decoration: none;
+  letter-spacing: 1rem;
 }
 
 .menu_bar li a:hover {
   background-color: #111111;
+  color: white;
 }
 
 .review_gallery {
   width: 100%;
-  background-color: rgb(41, 41, 41);
-  height: 1000px;
+  background-color: var(--dark_color);
 }

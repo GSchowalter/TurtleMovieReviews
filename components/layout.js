@@ -9,7 +9,7 @@ export const siteTitle = "Turtle Reviews";
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
 

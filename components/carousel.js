@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { mediaByIndex } from "./media";
 import styles from "./carousel.module.css";
 
 const EmblaCarousel = ({ slides, options = { loop: false } }) => {

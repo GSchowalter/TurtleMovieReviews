@@ -46,5 +46,6 @@ img {
   --background_color: #000000;
   --light_color: #edf5e1;
   --text_color: #eed9fd;
-  --medium_color: rgb(118, 118, 118);
+  --medium_color: rgb(222, 222, 222);
+  --dark_color: black;
 }

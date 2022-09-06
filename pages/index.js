@@ -6,6 +6,7 @@ import styles from "../styles/index.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import carousel from "../components/carousel";
 import Smallcarousel from "../components/small_carousel";
+import ReviewGallery from "../components/ReviewGallery";
 
 const SLIDE_COUNT = 6;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -66,7 +67,9 @@ export default function Home({ allPostsData }) {
           </li>
         </ul>
       </div>
-      <div className={styles.review_gallery}>Browse</div>
+      <div className={styles.review_gallery}>
+        <ReviewGallery cards={allPostsData} />
+      </div>
     </Layout>
   );
 }
