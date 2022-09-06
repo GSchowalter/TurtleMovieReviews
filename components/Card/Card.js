@@ -6,11 +6,16 @@ import styles from "./Card.module.css";
 const Card = (props) => {
   const _route = "/posts/" + `${props.route}`;
   return (
-    <div>
-      {props.title}
+    <div className={styles.card}>
       <Link href={_route}>
-        <Image src={props.image_url} width="100px" height="100px" />
+        <Image
+          src={props.image_url}
+          layout="responsive"
+          height="900px"
+          width="1600px"
+        />
       </Link>
+      <span className={styles.text_overlay}>{props.title}</span>
     </div>
   );
 };

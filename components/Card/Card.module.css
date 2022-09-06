@@ -1,0 +1,11 @@
+.card {
+  background-color: var(--dark_color);
+  padding: 1rem;
+  min-height: 4rem;
+  position: relative;
+}
+
+.text_overlay {
+  display: flex;
+  justify-content: center;
+}

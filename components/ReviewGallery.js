@@ -5,7 +5,6 @@ import styles from "./ReviewGallery.module.css";
 import Card from "./Card/Card.js";
 
 const ReviewGallery = (allPostsData) => {
-  console.log(allPostsData);
   return (
     <div>
       <div className={styles.browse_container}>

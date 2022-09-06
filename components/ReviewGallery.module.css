@@ -1,14 +1,9 @@
-.card {
-  background-color: var(--dark_color);
-  padding: 1rem;
-  min-height: 4rem;
-}
-
 .cards {
-  max-width: 100%;
-  margin: 0 auto;
   display: grid;
   gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
 }
 
 @media (min-width: 600px) {
