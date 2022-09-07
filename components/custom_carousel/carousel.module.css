@@ -10,10 +10,19 @@
   flex: 0 0 100%;
 }
 
+.embla__slide figcaption {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Tablet - 2 slides in viewport */
 @media (min-width: 768px) {
   .embla__slide {
     flex: 0 0 50%;
+  }
+  .embla__slide figcaption {
+    padding: 0.5rem;
   }
 }
 
