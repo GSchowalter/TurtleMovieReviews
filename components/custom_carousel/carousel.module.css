@@ -1,0 +1,25 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+
+/* Mobile - 1 slide in viewport */
+.embla__slide {
+  flex: 0 0 100%;
+}
+
+/* Tablet - 2 slides in viewport */
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+}
+
+/* Desktop - 3 slides in viewport  */
+/* @media (min-width: 992px) {
+  .embla__slide {
+    flex: 0 0 33.3333%;
+  }
+} */
