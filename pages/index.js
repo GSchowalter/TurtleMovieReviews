@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Carousel />
+      <Carousel media={allPostsData} />
       <div className={styles.menu_bar}>
         <ul>
           <li>

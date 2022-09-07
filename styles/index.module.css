@@ -13,7 +13,7 @@
   align-items: center;
 
   /* text */
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .menu_bar ul {
@@ -34,7 +34,7 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   text-decoration: none;
   letter-spacing: 0.5rem;
 }
@@ -44,7 +44,7 @@
   color: white;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1106px) {
   .menu_bar ul {
     display: flex;
     justify-content: space-between;
@@ -55,6 +55,7 @@
   .menu_bar li a {
     padding: 2.5rem;
     letter-spacing: 1rem;
+    font-size: 30px;
   }
 }
 

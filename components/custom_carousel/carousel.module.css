@@ -16,12 +16,10 @@
     flex: 0 0 50%;
   }
 }
-/* 
-Desktop - 3 slides in viewport @media (min-width: 992px) {
+
+/* Desktop - 3 slides in viewport  */
+/* @media (min-width: 992px) {
   .embla__slide {
     flex: 0 0 33.3333%;
-  }
-  .embla {
-    height: 10em;
   }
 } */

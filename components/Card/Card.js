@@ -7,15 +7,18 @@ const Card = (props) => {
   const _route = "/posts/" + `${props.route}`;
   return (
     <div className={styles.card}>
-      <Link href={_route}>
+      <div className={styles.img_hover}>
         <Image
           src={props.image_url}
           layout="responsive"
           height="900px"
           width="1600px"
         />
-      </Link>
-      <span className={styles.text_overlay}>{props.title}</span>
+
+        <Link href={_route}>
+          <figcaption>{props.title}</figcaption>
+        </Link>
+      </div>
     </div>
   );
 };

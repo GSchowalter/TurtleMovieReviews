@@ -2,12 +2,12 @@ import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import styles from "./smallcarousel.module.css";
-import media1 from "/public/images/carousel_media/bodiesbodiesbodies.webp";
-import media2 from "/public/images/carousel_media/lakemungo.jpg";
-import media3 from "/public/images/carousel_media/onthecountofthree.webp";
-import media4 from "/public/images/carousel_media/therehearsal.jpeg";
-import media5 from "/public/images/carousel_media/undertheskin.jpg";
-import media6 from "/public/images/carousel_media/theshining.jpg";
+import media1 from "/public/images/posts_media/bodiesbodiesbodies.webp";
+import media2 from "/public/images/posts_media/lakemungo.jpg";
+import media3 from "/public/images/posts_media/onthecountofthree.webp";
+import media4 from "/public/images/posts_media/therehearsal.jpeg";
+import media5 from "/public/images/posts_media/undertheskin.jpg";
+import media6 from "/public/images/posts_media/theshining.jpg";
 
 export const media = [media1, media2, media3, media4, media5, media6];
 export const mediaByIndex = (index) => {

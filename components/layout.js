@@ -27,13 +27,15 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/header.svg"
-              height={50}
-              width={600}
-              alt={title}
-            />
+            <div className={styles.sticky}>
+              <Image
+                priority
+                src="/header.svg"
+                height={50}
+                width={600}
+                alt={title}
+              />
+            </div>
           </>
         ) : (
           <>
