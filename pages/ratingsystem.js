@@ -1,5 +1,5 @@
 const ratingsystem = () => {
-  return <div>ratingsystem</div>;
+  return <div>Coming soon!</div>;
 };
 
 export default ratingsystem;
