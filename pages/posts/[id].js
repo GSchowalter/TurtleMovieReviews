@@ -27,7 +27,7 @@ export default function Post({ postData }) {
         <h2 className={utilStyles.headingXl}>
           Score: {postData.review_rating}
         </h2>
-        <div className={utilStyles.lightText}>
+        <div>
           {postData.reviewer} <br></br>
           {postData.review_date}
         </div>

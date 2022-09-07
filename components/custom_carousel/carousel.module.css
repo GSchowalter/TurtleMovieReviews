@@ -1,0 +1,34 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+
+/* Mobile - 1 slide in viewport */
+.embla__slide {
+  flex: 0 0 100%;
+}
+
+.embla__slide figcaption {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tablet - 2 slides in viewport */
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+  .embla__slide figcaption {
+    padding: 0.5rem;
+  }
+}
+
+/* Desktop - 3 slides in viewport  */
+/* @media (min-width: 992px) {
+  .embla__slide {
+    flex: 0 0 33.3333%;
+  }
+} */

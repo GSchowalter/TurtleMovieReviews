@@ -12,17 +12,14 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Murecho"
-          rel="stylesheet"
-        />
+
         <meta
           name="description"
           content="Turtle reviews. Reviewing all the movies."
         />
         <meta
           property="og:image"
-          content="https://www.turtlereviews.com/logo-light.svg"
+          content="https://www.turtlereviews.com/logo-blue.svg"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -30,14 +27,15 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/logo-light.svg"
-              height={144}
-              width={144}
-              alt={title}
-            />
-            <h1 className={utilStyles.heading2Xl}>{title}</h1>
+            <div className={styles.sticky}>
+              <Image
+                priority
+                src="/header.svg"
+                height={50}
+                width={600}
+                alt={title}
+              />
+            </div>
           </>
         ) : (
           <>
