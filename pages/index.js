@@ -4,7 +4,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../styles/index.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import carousel from "../components/carousel";
+import Carousel from "../components/custom_carousel/Carousel";
 import Smallcarousel from "../components/small_carousel";
 import ReviewGallery from "../components/ReviewGallery";
 
@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Smallcarousel slides={slides} />
+      <Carousel />
       <div className={styles.menu_bar}>
         <ul>
           <li>
