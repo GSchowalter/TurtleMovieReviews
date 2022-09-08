@@ -8,6 +8,7 @@ import Showdown from "showdown";
 export default function Post({ postData }) {
   const conv = new Showdown.Converter();
   const html_review = conv.makeHtml(postData.review);
+  console.log(html_review);
   return (
     <Layout>
       <Head>
