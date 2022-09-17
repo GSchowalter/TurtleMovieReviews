@@ -3,12 +3,8 @@ import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
-import Showdown from "showdown";
 
 export default function Post({ postData }) {
-  const conv = new Showdown.Converter();
-  const html_review = conv.makeHtml(postData.review);
-  console.log(html_review);
   return (
     <Layout>
       <Head>
@@ -32,7 +28,7 @@ export default function Post({ postData }) {
           {postData.reviewer} <br></br>
           {postData.review_date}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: html_review }} />
+        <div dangerouslySetInnerHTML={{ __html: postData.html_review }} />
       </article>
     </Layout>
   );
