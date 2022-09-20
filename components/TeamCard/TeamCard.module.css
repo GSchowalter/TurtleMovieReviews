@@ -1,0 +1,30 @@
+.card {
+  background-color: var(--light_color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 10rem;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 1%;
+}
+
+.img_wrapper {
+  width: 100%;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.title {
+  color: var(--dark_color);
+  margin: 0.5rem;
+}
+
+.description {
+  color: var(--dark_color);
+  margin: 0.5rem;
+}
+
+.name {
+  color: var(--dark_color);
+  margin: 0.5rem;
+}

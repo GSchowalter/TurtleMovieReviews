@@ -2,11 +2,11 @@ import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../styles/meettheteam.module.css";
 import Image from "next/image";
-
+import TeamCard from "../components/TeamCard/TeamCard";
 export default function meetttheteam() {
   return (
     <Layout>
-      <section className={`${styles.row}`}>
+      {/* <section className={`${styles.row}`}>
         <div className={styles.column}>
           <div className={styles.card}>
             <div className={styles.image_wrap}>
@@ -59,7 +59,22 @@ export default function meetttheteam() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <TeamCard
+        name="Grant"
+        title="hacker"
+        description="Nulla sit reprehenderit enim aliqua ex ea.Laboris et sunt id Lorem laborum dolore veniam sit exercitation ex. Laboris consectetur ex ad amet aliquip occaecat aliquip dolor reprehenderit culpa cillum. Ex laboris voluptate dolor nostrud voluptate velit pariatur voluptate."
+      />
+      <TeamCard
+        name="Grant"
+        title="hacker"
+        description="Nulla sit reprehenderit enim aliqua ex ea.Laboris et sunt id Lorem laborum dolore veniam sit exercitation ex. Laboris consectetur ex ad amet aliquip occaecat aliquip dolor reprehenderit culpa cillum. Ex laboris voluptate dolor nostrud voluptate velit pariatur voluptate."
+      />
+      <TeamCard
+        name="Grant"
+        title="hacker"
+        description="Nulla sit reprehenderit enim aliqua ex ea.Laboris et sunt id Lorem laborum dolore veniam sit exercitation ex. Laboris consectetur ex ad amet aliquip occaecat aliquip dolor reprehenderit culpa cillum. Ex laboris voluptate dolor nostrud voluptate velit pariatur voluptate."
+      />
     </Layout>
   );
 }
