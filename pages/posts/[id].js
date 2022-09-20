@@ -12,18 +12,19 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article className={styles.article}>
+        <div className={styles.media_information}>
+          {" "}
+          <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
+          <h3 className={utilStyles.headingMd}>{postData.release_year}</h3>
+          <h3 className={utilStyles.headingMd}>
+            Directed by {postData.director}
+          </h3>
+          <h3 className={utilStyles.headingMd}>Starring {postData.starring}</h3>
+        </div>
         <div className={styles.cinema_image}>
           <img src={postData.image_url} />
 
           <div className={styles.review_info}>
-            <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
-            <h3 className={utilStyles.headingMd}>{postData.release_year}</h3>
-            <h3 className={utilStyles.headingMd}>
-              Directed by {postData.director}
-            </h3>
-            <h3 className={utilStyles.headingMd}>
-              Starring {postData.starring}
-            </h3>
             <h2 className={utilStyles.headingXl}>
               Score: {postData.review_rating}
             </h2>
