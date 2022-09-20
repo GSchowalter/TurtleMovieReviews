@@ -2,3 +2,24 @@
   color: var(--light_color);
   text-align: center;
 }
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.cinema_image {
+  max-width: 60%;
+}
+
+.review_info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.review_info > * {
+  margin: 0.25rem;
+}

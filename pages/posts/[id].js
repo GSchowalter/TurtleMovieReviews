@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
+import styles from "../../styles/[id].module.css";
 
 export default function Post({ postData }) {
   return (
@@ -10,24 +11,29 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <div className={utilStyles.cinema_image}>
+      <article className={styles.article}>
+        <div className={styles.cinema_image}>
           <img src={postData.image_url} />
+
+          <div className={styles.review_info}>
+            <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
+            <h3 className={utilStyles.headingMd}>{postData.release_year}</h3>
+            <h3 className={utilStyles.headingMd}>
+              Directed by {postData.director}
+            </h3>
+            <h3 className={utilStyles.headingMd}>
+              Starring {postData.starring}
+            </h3>
+            <h2 className={utilStyles.headingXl}>
+              Score: {postData.review_rating}
+            </h2>
+            <div>
+              {postData.reviewer} <br></br>
+              {postData.review_date}
+            </div>
+          </div>
         </div>
 
-        <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
-        <h3 className={utilStyles.headingMd}>{postData.release_year}</h3>
-        <h3 className={utilStyles.headingMd}>
-          Directed by {postData.director}
-        </h3>
-        <h3 className={utilStyles.headingMd}>Starring {postData.starring}</h3>
-        <h2 className={utilStyles.headingXl}>
-          Score: {postData.review_rating}
-        </h2>
-        <div>
-          {postData.reviewer} <br></br>
-          {postData.review_date}
-        </div>
         <div dangerouslySetInnerHTML={{ __html: postData.html_review }} />
       </article>
     </Layout>

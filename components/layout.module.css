@@ -5,6 +5,13 @@
   align-items: center;
 }
 
+.small_container {
+  max-width: 60rem;
+  padding: 0 1rem;
+  margin: 0 auto 6rem;
+  align-items: center;
+}
+
 .header {
   display: flex;
   flex-direction: column;
