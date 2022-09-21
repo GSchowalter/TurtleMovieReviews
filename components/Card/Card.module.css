@@ -8,8 +8,6 @@
 .img_hover:before,
 .img_hover:after {
   background-color: rgba(0, 0, 0, 0.5);
-  border-top: 32px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -19,7 +17,6 @@
   transition: all 0.3s ease;
   z-index: 1;
   opacity: 0;
-  transform: scaleY(2);
 }
 
 .img_hover img {
@@ -27,7 +24,11 @@
   max-width: 100%;
   backface-visibility: hidden;
 }
-
+@media (max-width: 900px) {
+  .img_hover figcaption {
+    font-size: 18px;
+  }
+}
 .img_hover figcaption {
   position: absolute;
   top: 0;
@@ -49,6 +50,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 .img_hover:hover:before,
 .img_hover:hover:after {
   transform: scale(1);

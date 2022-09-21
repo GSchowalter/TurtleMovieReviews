@@ -8,9 +8,11 @@ const ReviewGallery = (allPostsData) => {
   return (
     <div>
       <div className={styles.browse_container}>
-        <Link href="#gallery">
-          <Image src="/BrowseButton.svg" width="200px" height="100px" />
-        </Link>
+        <div className={styles.wrapper}>
+          <Link href="#gallery">
+            <Image src="/BrowseButton.svg" width="150px" height="100px" />
+          </Link>
+        </div>
       </div>
       <div id="gallery">
         <div className={styles.cards}>
