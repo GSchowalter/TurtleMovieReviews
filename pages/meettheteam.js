@@ -68,10 +68,10 @@ export default function meetttheteam() {
         <TeamCard
           name="Grant"
           last_name="Schowalter"
-          title="hacker"
+          title="Reviewer and Web Designer"
           description="My name is Grant Schowalter and in my freetime I like to watch
-        as many movies as possible. I figured I would try my hand at
-        engaging and growing the entertainment community by making this
+        as many movies as possible. I studied cinema and computer science in college and I figured I would try my hand at
+        engaging with and growing the entertainment community by making this
         site."
         />
         <TeamCard
