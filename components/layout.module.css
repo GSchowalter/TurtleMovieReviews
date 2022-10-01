@@ -9,6 +9,8 @@
   max-width: 60rem;
   padding: 0 1rem;
   margin: 0 auto 6rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -23,12 +25,12 @@
   margin: 3rem 0 0;
 }
 
-.img_wrapper_big {
+.img_wrapper_home {
   display: block;
   min-width: 50%;
 }
 
-.img_wrapper_small {
+.img_wrapper {
   display: block;
-  min-width: 10%;
+  min-width: 75%;
 }

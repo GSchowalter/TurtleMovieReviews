@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <div className={styles.img_wrapper_big}>
+            <div className={styles.img_wrapper_home}>
               <Image
                 priority
                 src="/images/branding/header.svg"
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <div className={styles.img_wrapper_small}>
+            <div className={styles.img_wrapper}>
               <Link href="/">
                 <a>
                   <Image
