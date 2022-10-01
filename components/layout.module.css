@@ -22,3 +22,13 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.img_wrapper_big {
+  display: block;
+  min-width: 50%;
+}
+
+.img_wrapper_small {
+  display: block;
+  min-width: 10%;
+}
