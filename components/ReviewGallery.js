@@ -10,7 +10,11 @@ const ReviewGallery = (allPostsData) => {
       <div className={styles.browse_container}>
         <div className={styles.wrapper}>
           <Link href="#gallery">
-            <Image src="/BrowseButton.svg" width="150px" height="100px" />
+            <Image
+              src="/images/branding/BrowseButton.svg"
+              width="150px"
+              height="100px"
+            />
           </Link>
         </div>
       </div>

@@ -27,29 +27,33 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <div className={styles.sticky}>
+            <div className={styles.img_wrapper_home}>
               <Image
                 priority
-                src="/header.svg"
+                src="/images/branding/header.svg"
                 height={50}
                 width={600}
                 alt={title}
+                layout="responsive"
               />
             </div>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/logo-light.svg"
-                  height={108}
-                  width={108}
-                  alt={title}
-                />
-              </a>
-            </Link>
+            <div className={styles.img_wrapper}>
+              <Link href="/">
+                <a>
+                  <Image
+                    priority
+                    src="/images/branding/logo-light.svg"
+                    height={108}
+                    width={108}
+                    alt={title}
+                    layout="responsive"
+                  />
+                </a>
+              </Link>
+            </div>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{title}</a>
