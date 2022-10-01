@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
             <div className={styles.sticky}>
               <Image
                 priority
-                src="/header.svg"
+                src="/images/branding/header.svg"
                 height={50}
                 width={600}
                 alt={title}
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/logo-light.svg"
+                  src="/images/branding/logo-light.svg"
                   height={108}
                   width={108}
                   alt={title}
