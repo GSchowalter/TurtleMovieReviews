@@ -11,7 +11,7 @@ const TeamCard = ({ name, last_name, title, description, reverse }) => {
         <div className={styles.img_wrapper}>
           <Image
             className={`${utilStyles.borderCircle} ${styles.image}`}
-            src={"/images/" + name.toLowerCase() + ".jpg"}
+            src={"/images/meet_the_team/" + name.toLowerCase() + ".jpg"}
             height="50"
             width="50"
             layout="responsive"
