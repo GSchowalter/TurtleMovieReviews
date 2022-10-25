@@ -22,7 +22,7 @@ const Review_Info = (props) => {
           <h2>{props.reviewer}</h2>
         </div>
         <div className={styles.date}>
-          <h2>{props.review_date}</h2>
+          <h3>{props.review_date}</h3>
         </div>
         <div className={styles.b}></div>
       </div>
