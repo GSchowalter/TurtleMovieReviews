@@ -1,0 +1,26 @@
+.reviewer_container {
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  padding: 1rem;
+}
+
+.profile_pic {
+  grid-column: 1;
+  /* grid-row: 2 / span 2;
+  padding: 1rem; */
+}
+
+.name {
+  grid-column: 2;
+  grid-row: 2;
+  margin-bottom: -1rem;
+}
+
+.date {
+  grid-column: 2;
+  grid-row: 3;
+  margin-top: -1rem;
+}

@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
+import Review_Info from "../../components/Review_Info/Review_Info";
 import utilStyles from "../../styles/utils.module.css";
 import styles from "../../styles/[id].module.css";
 
@@ -23,19 +24,17 @@ export default function Post({ postData }) {
         </div>
         <div className={styles.cinema_image}>
           <img src={postData.image_url} />
-
-          <div className={styles.review_info}>
-            <h2 className={utilStyles.headingXl}>
-              Score: {postData.review_rating}
-            </h2>
-            <div>
-              {postData.reviewer} <br></br>
-              {postData.review_date}
-            </div>
-          </div>
         </div>
-
+        <h2 className={utilStyles.headingXl}>
+          Score: {postData.review_rating}
+        </h2>
         <div dangerouslySetInnerHTML={{ __html: postData.html_review }} />
+        <div className={styles.review_info}>
+          <Review_Info
+            reviewer={postData.reviewer}
+            review_date={postData.review_date}
+          ></Review_Info>
+        </div>
       </article>
     </Layout>
   );
