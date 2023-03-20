@@ -31,12 +31,6 @@ export default function meetttheteam() {
         opportunity presents itself. I am also the proud father of a
         sweet two year tabby and also very much enjoy playing chess."
         />
-        <TeamCard
-          name="Andrew"
-          last_name="Lee"
-          title="Reviewer"
-          description="Nulla sit reprehenderit enim aliqua ex ea.Laboris et sunt id Lorem laborum dolore veniam sit exercitation ex. Laboris consectetur ex ad amet aliquip occaecat aliquip dolor reprehenderit culpa cillum. Ex laboris voluptate dolor nostrud voluptate velit pariatur voluptate."
-        />
       </div>
     </Layout>
   );
